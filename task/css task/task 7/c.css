@@ -1,0 +1,76 @@
+.ball {
+  background: #458ece;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  margin: 80px auto 0 auto;
+}
+.ball1 {
+  position: absolute;
+  background: #fff;
+  width: 75px;
+  left: 45%;
+  top:30%;
+  z-index: 1;
+  height: 75px;
+  border-radius: 150px;
+}
+.ball2 {
+  position: absolute;
+  background: #fff;
+  width: 75px;
+  left: 15%;
+  top:30%;
+  height: 75px;
+  z-index: 1;
+  border-radius: 150px;
+}
+.ball1s {
+  position: absolute;
+  background: #1f1e34;
+  width: 50px;
+  left: 5%;
+  top:15%;
+  z-index: 1;
+  height: 50px;
+  border-radius: 150px;
+}
+.ball2s {
+  position: absolute;
+  background: #1f1e34;
+  width: 50px;
+  left: 27%;
+  top:15%;
+  z-index: 2;
+  height: 50px;
+  border-radius: 150px;
+}
+.ball2m {
+  position: absolute;
+  width: 80px;
+  left: 27%;
+  top:45%;
+  z-index: 2;
+  height: 3px;
+}
+.ball2m::after {
+  content: '';
+  position: absolute;
+  right: -0px;
+  top: -30px;
+  height: 100px;
+  width: 80px;
+  border-radius: 20%;
+  border: 0 solid #1f1e34;
+  border-width:0px 0px 5px 0;
+}
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+.ball, .ball1,.ball2,.ball2m{
+  animation: bounce 0.2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+

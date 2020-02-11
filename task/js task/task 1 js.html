@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Task 1 js</h1>
+<script>
+
+for (var x=1; x <= 100; x++){
+     
+    if( x % 3==0 && x % 5==0 ) {
+        document.write("InfiniteTiers");
+    } 
+    else if( x % 3 == 0 ) 
+        {
+            document.write("Infinite");
+        }
+    else if( x % 5 == 0 )
+        {
+            document.write("Tiers");
+        }
+   else{
+       document.write(x); 
+       }
+    document.write('<br>');
+}
+</script>
+
+<script>
+for(var x=1;x<=100;x++)
+document.write((((x%3?'':'Infinite')+(x%5?'':'Tiers'))||x)+'<br>');
+</script>
+
+
+</body>
+</html>

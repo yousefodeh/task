@@ -1,0 +1,71 @@
+body{
+  background: #008686;
+}
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    height: 1px; width: 1px;      
+}
+.h {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.h .bar {
+    padding: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+    position: absolute; 
+}
+.bar1 {
+    top: 0;
+}
+.bar2 , .bar3 {
+    top: 13.5px;
+}
+.h1 .bar4 {
+    top: 13.5px;
+}
+.h1 .bar5 {
+    bottom: 0px;
+}
+.h1 .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+.h1 .bar2 {
+    width: 1px;
+    transform: rotate(0deg);
+    left: 14.5px;
+}
+.h1 .bar3 {
+    width: 1px;
+    left: 14.5px;   
+}
+.checkbox:checked + label > .h1 > .bar1{
+   top: 14.5px;
+   background-color: transparent;
+}
+.checkbox:checked + label > .h1 > .bar2{
+    left: 0px;
+    width: 40px;
+    transform: rotate(45deg);
+}
+.checkbox:checked + label > .h1 > .bar3{
+    left: 0;
+    width: 40px;
+    transform: rotate(-45deg);
+}
+.checkbox:checked + label > .h1 > .bar4{
+    background-color: transparent;
+}
+.checkbox:checked + label > .h1 > .bar5{
+    bottom: 14.5px;
+    background-color: transparent; 
+}
+

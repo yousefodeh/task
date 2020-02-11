@@ -1,0 +1,22 @@
+.container {
+width:110px;
+  height:400px;
+  padding:5px;
+  border:1px solid blue;
+}
+
+.column {
+  width:40%;  
+  height:60px;
+  display:inline-block;
+  margin:3px;
+}
+.row .column {
+border:1px solid red;
+}
+.row2 .column {
+border:1px solid green;
+}
+.row,.row2{
+  display:inline;
+}
